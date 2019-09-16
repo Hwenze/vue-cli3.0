@@ -1,39 +1,28 @@
-# my-project
+# typescript语言
+    typescript > es6 > js
+    js的超集
 
-## Project setup
-```
-npm install
-```
+## type 类型的意思
+    声明一些元素的类型
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+    let str:string = '字符串'
 ```
+    你写代码并不是给自己写代码
+    别人用你的代码会乱搞，别人不知道你写方法和组件
 
-### Compiles and minifies for production
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+    function add(x:number, y:number):number {
+        return x + y
+    }
+    add('字符串', [1,2,3]); //直接报错
+    add(1, 2); //3
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+## ts更多的好处
+    1、为日后的维护代码带来很大的方便
+    2、使得代码的可读性更高
+    3、你的代码更加安全
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## ts不好的地方
+    写法麻烦
