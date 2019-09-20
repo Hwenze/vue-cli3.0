@@ -24,6 +24,50 @@ export default class HelloWorld extends Vue {
   // 方法
   addCount():void{
     this.$store.dispatch('addCount');
+  };
+  test(){
+    // 1、
+    // for(var i = 0; i<3; i++){
+    //   setTimeout(()=>{
+    //     console.log(i)
+    //   },0)
+    // }
+    // 2、
+    // var a = {}, b = a;
+    // b.name = '小泽';
+    // console.log(a.name)
+    // 3、
+    // function animals(...types){
+    //   console.log(types)
+    // }
+    // animals('1', '2', '3');
+    // 4、
+    // var a = null;
+    // console.log(typeof a);
+    // 5、
+    // var uname = 'jack';
+    // function change(){
+    //   console.log(uname);
+    //   var uname = '小泽';
+    //   console.log(uname);
+    // }
+    // change();
+    // 6、
+    // +function(foo){
+    //   return typeof foo.bar;
+    // }({foo:{bar:1}});
+    // 7、
+    // var num = 10;
+    // function add(){
+    //   var num = 0;
+    //   return function(){
+    //     num += 1;
+    //     console.log(num);
+    //   }
+    // }
+    // var s = add();
+    // s();
+    // s();
   }
 }
 </script>
